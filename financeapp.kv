@@ -1,0 +1,46 @@
+#ScreenManager:
+ #   First:
+  #  Second:
+    #homepage:  
+    #sign_in_page:
+       
+        
+
+
+
+<homepage>:
+    #name: "homepagescreen"
+    sign_in: sign_in_label
+    register: register_label
+
+
+    BoxLayout:
+        orientation: "vertical"
+        Label:
+            text: "finance App" 
+            font_size: 64
+
+            color: 0.92, 0.45, 0
+    
+        Button:
+            id: sign_in_label
+            text: "sign in" 
+            font_size: 64
+            size: 100,50 
+            on_release: root.manager.current = "signinscreen"
+
+
+        Button:
+            id: register_label
+            text: "register"
+            font_size: 64
+            size: 100, 50
+
+
+<sign_in_page>:
+    
+    #name: "signinscreen"
+    BoxLayout:
+        orientation: "vertical"
+
+        
